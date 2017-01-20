@@ -5,6 +5,9 @@ import { TranslateModule, TranslateStaticLoader, TranslateLoader } from 'ng2-tra
 import { MyApp } from './app.component';
 import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
+import { WelcomePage } from '../pages/welcome/welcome'
+import { LoginPage } from '../pages/login/login'
+import { SignupPage } from '../pages/signup/signup'
 
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, 'assets/i18n', '.json');
@@ -14,7 +17,10 @@ export function createTranslateLoader(http: Http) {
   declarations: [
     MyApp,
     Page1,
-    Page2
+    Page2,
+    WelcomePage,
+    LoginPage,
+    SignupPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -28,7 +34,10 @@ export function createTranslateLoader(http: Http) {
   entryComponents: [
     MyApp,
     Page1,
-    Page2
+    Page2,
+    WelcomePage,
+    LoginPage,
+    SignupPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

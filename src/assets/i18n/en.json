@@ -1,3 +1,10 @@
 {
-    "EXAMPLE": "example"
+    "SIGNUP": "Sign up",
+    "LOGIN": "Login",
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "USER_TYPE": "User type",
+    "OBSERVER": "Observer",
+    "OBSERVATORY": "Observatory"
 }

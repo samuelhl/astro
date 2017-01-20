@@ -1,3 +1,10 @@
 {
-    "EXAMPLE": "ejemplo"
+    "SIGNUP": "Registrarse",
+    "LOGIN": "Iniciar sesión",
+    "NAME": "Nombre",
+    "EMAIL": "Correo",
+    "PASSWORD": "Contraseña",
+    "USER_TYPE": "Tipo de usuario",
+    "OBSERVER": "Observador",
+    "OBSERVATORY": "Observatorio"
 }
