@@ -3,7 +3,7 @@ import { NavController, ToastController } from 'ionic-angular';
 
 import { TranslateService } from 'ng2-translate/ng2-translate';
 
-import { Page1 } from '../../pages/page1/page1';
+import { Events } from '../../pages/events/events';
 //import { User } from '../../providers/user';
 
 /*
@@ -62,7 +62,7 @@ export class SignupPage {
 
   // TODO: Remove when sign up works
   doSignup() {
-    this.navCtrl.setRoot(Page1);
+    this.navCtrl.setRoot(Events);
   }
 }
 

@@ -6,5 +6,6 @@
     "PASSWORD": "Contraseña",
     "USER_TYPE": "Tipo de usuario",
     "OBSERVER": "Observador",
-    "OBSERVATORY": "Observatorio"
+    "OBSERVATORY": "Observatorio",
+    "EVENTS": "Eventos"
 }

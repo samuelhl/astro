@@ -6,5 +6,6 @@
     "PASSWORD": "Password",
     "USER_TYPE": "User type",
     "OBSERVER": "Observer",
-    "OBSERVATORY": "Observatory"
+    "OBSERVATORY": "Observatory",
+    "EVENTS": "Events"
 }
