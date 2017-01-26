@@ -4,7 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { TranslateModule, TranslateStaticLoader, TranslateLoader } from 'ng2-translate/ng2-translate';
 import { MyApp } from './app.component';
 import { Events } from '../pages/events/events';
-import { Page2 } from '../pages/page2/page2';
+import { MyEvents } from '../pages/my_events/my_events';
 import { WelcomePage } from '../pages/welcome/welcome'
 import { LoginPage } from '../pages/login/login'
 import { SignupPage } from '../pages/signup/signup'
@@ -17,7 +17,7 @@ export function createTranslateLoader(http: Http) {
   declarations: [
     MyApp,
     Events,
-    Page2,
+    MyEvents,
     WelcomePage,
     LoginPage,
     SignupPage
@@ -34,7 +34,7 @@ export function createTranslateLoader(http: Http) {
   entryComponents: [
     MyApp,
     Events,
-    Page2,
+    MyEvents,
     WelcomePage,
     LoginPage,
     SignupPage

@@ -5,7 +5,7 @@ import { TranslateService } from 'ng2-translate/ng2-translate';
 
 import { WelcomePage } from '../pages/welcome/welcome'
 import { Events } from '../pages/events/events';
-import { Page2 } from '../pages/page2/page2';
+import { MyEvents } from '../pages/my_events/my_events';
 
 
 @Component({
@@ -24,7 +24,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'EVENTS', component: Events },
-      { title: 'Page Two', component: Page2 }
+      { title: 'MY_EVENTS', component: MyEvents }
     ];
 
     this.translateConfig();
