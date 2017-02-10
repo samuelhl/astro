@@ -1,12 +1,20 @@
 {
     "SIGNUP": "Sign up",
     "LOGIN": "Login",
-    "NAME": "Name",
+    "USERNAME": "Username",
     "EMAIL": "Email",
     "PASSWORD": "Password",
+    "TELEPHONE": "Telephone",
     "USER_TYPE": "User type",
     "OBSERVER": "Observer",
     "OBSERVATORY": "Observatory",
+    "NAME": "Name",
+    "SURNAME": "Surname",
+    "ADDRESS": "Address",
+    "DESCRIPTION": "Description",
     "EVENTS": "Events",
-    "MY_EVENTS": "My events"
+    "MY_EVENTS": "My events",
+    "LOGIN_ERROR": "Login credentials incorrect",
+    "LOGIN_SUCCESS": "Login successful",
+    "SIGNUP_SUCCESS": "Signup succesful"
 }

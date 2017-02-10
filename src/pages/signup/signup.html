@@ -1,9 +1,7 @@
 <ion-header>
-
   <ion-navbar>
     <ion-title>{{ 'SIGNUP' | translate }}</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
@@ -12,18 +10,23 @@
     <ion-list>
 
       <ion-item>
-        <ion-label>{{ 'NAME' | translate }}</ion-label>
-        <ion-input type="text" [(ngModel)]="account.name" name="name"></ion-input>
-      </ion-item>
-
-      <ion-item>
         <ion-label>{{ 'EMAIL' | translate }}</ion-label>
         <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
       </ion-item>
 
       <ion-item>
+        <ion-label>{{ 'USERNAME' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="account.username" name="username"></ion-input>
+      </ion-item>
+
+      <ion-item>
         <ion-label>{{ 'PASSWORD' | translate }}</ion-label>
         <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'TELEPHONE' | translate }}</ion-label>
+        <ion-input type="tel" [(ngModel)]="account.telephone" name="telephone"></ion-input>
       </ion-item>
 
       <ion-item>
@@ -34,8 +37,37 @@
         </ion-select>
       </ion-item>
 
+      <div *ngIf="account.userType == 'observer'">
+        <ion-item>
+          <ion-label>{{ 'NAME' | translate }}</ion-label>
+          <ion-input type="text" [(ngModel)]="account.name" name="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>{{ 'SURNAME' | translate }}</ion-label>
+          <ion-input type="text" [(ngModel)]="account.surname" name="surname"></ion-input>
+        </ion-item>
+      </div>
+
+      <div *ngIf="account.userType == 'observatory'">
+        <ion-item>
+          <ion-label>{{ 'NAME' | translate }}</ion-label>
+          <ion-input type="text" [(ngModel)]="account.name" name="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>{{ 'ADDRESS' | translate }}</ion-label>
+          <ion-input type="text" [(ngModel)]="account.address" name="surname"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>{{ 'DESCRIPTION' | translate }}</ion-label>
+          <ion-textarea [(ngModel)]="account.description" name="description"></ion-textarea>
+        </ion-item>
+      </div>
+
       <div padding>
-        <button ion-button color="primary" block>{{ 'SIGNUP' | translate }}</button>
+        <button ion-button color="secondary" block>{{ 'SIGNUP' | translate }}</button>
       </div>
 
     </ion-list>
