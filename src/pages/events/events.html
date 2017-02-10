@@ -3,12 +3,32 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>{{ 'EVENTS' | translate }}</ion-title>
+    <ion-title>{{ 'OBSERVATIONS' | translate }}</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <p>
-    List of events...
-  </p>
+	<ion-list>
+		<ion-item>
+			<ion-thumbnail item-left>
+				<img src="assets/img/astro.png">
+			</ion-thumbnail>
+			<h2>Name</h2>
+			<p>Location</p>
+			<p>Date (Hour)</p>
+			<p>Seats</p>
+			<button ion-button clear item-right>View</button>
+		</ion-item>
+
+		<ion-item>
+			<ion-thumbnail item-left>
+				<img src="assets/img/astro.png">
+			</ion-thumbnail>
+			<h2>Name</h2>
+			<p>Location</p>
+			<p>Date (Hour)</p>
+			<p>Seats</p>
+			<button ion-button clear item-right>View</button>
+		</ion-item>
+	</ion-list>
 </ion-content>
