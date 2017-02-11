@@ -71,8 +71,12 @@ export class Events {
 		nPlaces: 80
 	};
 
-  constructor(public navCtrl: NavController) {
-    
-  }
+	constructor(public navCtrl: NavController) {
+
+	}
+
+	goObservation() {
+		this.navCtrl.setRoot(Observacion);
+	}
 
 }
