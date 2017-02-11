@@ -9,7 +9,7 @@ import { Events } from '../../pages/events/events';
 })
 
 export class SignupPage {
-  account: {email: string, username: string, password: string, telephone: string, userType: string, name: string, surname: string, address: string, description: string} = {
+  public account: {email: string, username: string, password: string, telephone: string, userType: string, name: string, surname: string, address: string, description: string} = {
     email: '',
     username: '',
     password: '',
@@ -20,6 +20,8 @@ export class SignupPage {
     address: '',
     description: ''
   };
+
+  public timeoutId: number;
 
   // Translated strings
   private signupSuccessString: string;
@@ -41,9 +43,9 @@ export class SignupPage {
     });
 
     // Timeout (1 minute)
-    let timeoutId = setTimeout(() => {  
+    this.timeoutId = setTimeout(() => {  
       this.timeout();
-    }, 60000);
+    }, 10000);
   }
 
   doSignup() {
@@ -54,6 +56,7 @@ export class SignupPage {
           position: 'top'
       });
       toast.present();
+      clearTimeout(this.timeoutId);
       this.navCtrl.setRoot(Events);
     } else {
       let toast = this.toastCtrl.create({
@@ -73,6 +76,7 @@ export class SignupPage {
         });
     toast.present();
     this.navCtrl.pop();
+    clearTimeout(this.timeoutId);
   }
 }
 

@@ -28,6 +28,8 @@ export class LoginPage {
     password: ''
   };
 
+  public timeoutId: number;
+
   // Translated strings
   private loginErrorString: string;
   private loginSuccessString: string;
@@ -53,7 +55,7 @@ export class LoginPage {
     });
 
     // Timeout (1 minute)
-    let timeoutId = setTimeout(() => {  
+    this.timeoutId = setTimeout(() => {  
       this.timeout();
     }, 60000);
   }
@@ -67,6 +69,7 @@ export class LoginPage {
           position: 'top'
         });
         toast.present();
+        clearTimeout(this.timeoutId);
         this.navCtrl.setRoot(Events);
       } else {
         let toast = this.toastCtrl.create({
@@ -102,5 +105,6 @@ export class LoginPage {
         });
     toast.present();
     this.navCtrl.pop();
+    clearTimeout(this.timeoutId);
   }
 }
