@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'page-observacion',
@@ -20,13 +21,23 @@ export class Observacion {
     limitDate: '15/02/2017',
     nPlacesPerPerson: 5,
   };
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private alertCtrl: AlertController) {
     
+  }
+  
+  presentAlert() {
+    let alert = this.alertCtrl.create({
+        title: 'Reserva realizada',
+        subTitle: 'Si lo desea, puede cancelar la reserva',
+        buttons: [" Ok "]
+    });
+    alert.present();
   }
   
   // TODO: Remove when login works
   doReserve() {
     //this.navCtrl.setRoot(Observation);
+    this.presentAlert();
   }
 
 }
