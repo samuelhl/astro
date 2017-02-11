@@ -1,12 +1,22 @@
 {
     "SIGNUP": "Registrarse",
     "LOGIN": "Iniciar sesión",
-    "NAME": "Nombre",
+    "USERNAME": "Nombre de usuario",
     "EMAIL": "Correo",
     "PASSWORD": "Contraseña",
+    "TELEPHONE": "Teléfono",
     "USER_TYPE": "Tipo de usuario",
     "OBSERVER": "Observador",
     "OBSERVATORY": "Observatorio",
+    "NAME": "Nombre",
+    "SURNAME": "Apellidos",
+    "ADDRESS": "Dirección",
+    "DESCRIPTION": "Descripción",
     "EVENTS": "Eventos",
-    "MY_EVENTS": "Mis eventos"
+    "MY_EVENTS": "Mis eventos",
+    "LOGIN_ERROR": "Credenciales de inicio de sesión incorrectos",
+    "LOGIN_SUCCESS": "Inicio de sesión correcto",
+    "SIGNUP_SUCCESS": "Registro correcto",
+    "EMPTY_FIELDS": "Porfavor rellena los campos obligatorios vacíos",
+    "TIMEOUT": "Tiempo expirado"
 }
