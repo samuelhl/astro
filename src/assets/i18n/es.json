@@ -8,5 +8,15 @@
     "OBSERVER": "Observador",
     "OBSERVATORY": "Observatorio",
     "EVENTS": "Eventos",
-    "MY_EVENTS": "Mis eventos"
+    "MY_EVENTS": "Mis eventos",
+    "CREATION": "Creación",
+    "CREATE_OBSERVATION": "Crear observación",
+    "DESCRIPTION": "Descripción",
+    "COORDINATES": "Coordenadas",
+    "PLACES": "Plazas",
+    "PLACES_PER_PERSON": "Plazas por persona",
+    "DEADLINE": "Fecha límite",
+    "DATE": "Fecha",
+    "TIME": "Hora",
+    "CREATE": "Crear"
 }

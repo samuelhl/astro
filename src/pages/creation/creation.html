@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ 'CREATION' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form (submit)="createObservation()">
+    <ion-list>
+
+      <ion-item>
+        <ion-label>{{ 'NAME' | translate }}</ion-label>
+        <ion-input type="email" [(ngModel)]="name" name="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'DESCRIPTION' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="password" name="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'COORDINATES' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="coordinates" name="coordinates"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'PLACES' | translate }}</ion-label>
+        <ion-input type="number" [(ngModel)]="places" name="places"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'PLACES_PER_PERSON' | translate }}</ion-label>
+        <ion-input type="number" [(ngModel)]="places_per_person" name="places_per_person"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'DATE' | translate }}</ion-label>
+        <ion-input type="date" [(ngModel)]="date" name="date"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'TIME' | translate }}</ion-label>
+        <ion-input type="time" [(ngModel)]="time" name="time"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'DEADLINE' | translate }}</ion-label>
+        <ion-input type="date" [(ngModel)]="deadline" name="deadline"></ion-input>
+      </ion-item>
+
+      <div padding>
+        <button ion-button color="primary" block>{{ 'CREATE' | translate }}</button>
+      </div>
+
+    </ion-list>
+  </form>
+</ion-content>

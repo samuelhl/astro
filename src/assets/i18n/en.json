@@ -8,5 +8,15 @@
     "OBSERVER": "Observer",
     "OBSERVATORY": "Observatory",
     "EVENTS": "Events",
-    "MY_EVENTS": "My events"
+    "MY_EVENTS": "My events",
+    "CREATION": "Creation",
+    "CREATE_OBSERVATION": "Create observation",
+    "DESCRIPTION": "Description",
+    "COORDINATES": "Coordinates",
+    "PLACES": "Places",
+    "PLACES_PER_PERSON": "Places per person",
+    "DEADLINE": "Deadline",
+    "DATE": "Date",
+    "TIME": "Time",
+    "CREATE": "Create"
 }
