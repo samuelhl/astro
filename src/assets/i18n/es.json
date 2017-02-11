@@ -8,5 +8,14 @@
     "OBSERVER": "Observador",
     "OBSERVATORY": "Observatorio",
     "EVENTS": "Eventos",
-    "MY_EVENTS": "Mis eventos"
+    "MY_EVENTS": "Mis eventos",
+    "OBSERVATION": "Observacion",
+    "ADRESS": "Dirección",
+    "DATE": "Fecha",
+    "NUMMAXPLACES": "Número máximo de plazas",
+    "PLACESPERPERSON": "Reservar plazas",
+    "RESERVE": "Reservar",
+    "LOCATION": "Localización",
+    "DESCRIPTION": "Descripción",
+    "INFORMATION": "Información"
 }

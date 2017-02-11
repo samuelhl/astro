@@ -8,6 +8,7 @@ import { MyEvents } from '../pages/my_events/my_events';
 import { WelcomePage } from '../pages/welcome/welcome'
 import { LoginPage } from '../pages/login/login'
 import { SignupPage } from '../pages/signup/signup'
+import { Observacion } from '../pages/observacion/observacion'
 
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, 'assets/i18n', '.json');
@@ -20,7 +21,8 @@ export function createTranslateLoader(http: Http) {
     MyEvents,
     WelcomePage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    Observacion
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -37,7 +39,8 @@ export function createTranslateLoader(http: Http) {
     MyEvents,
     WelcomePage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    Observacion
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
