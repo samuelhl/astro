@@ -1,12 +1,17 @@
 {
     "SIGNUP": "Sign up",
     "LOGIN": "Login",
-    "NAME": "Name",
+    "USERNAME": "Username",
     "EMAIL": "Email",
     "PASSWORD": "Password",
+    "TELEPHONE": "Telephone",
     "USER_TYPE": "User type",
     "OBSERVER": "Observer",
     "OBSERVATORY": "Observatory",
+    "NAME": "Name",
+    "SURNAME": "Surname",
+    "ADDRESS": "Address",
+    "DESCRIPTION": "Description",
     "EVENTS": "Events",
     "MY_EVENTS": "My events",
     "CREATION": "Creation",
@@ -22,5 +27,9 @@
     "IMAGE": "Image",
     "CREATED": "Observation created",
     "CREATION_ERROR":"Error: Amount of places per person cannot be higher than the total amount of places",
-    "TIMEOUT": "Your time expired"
+    "LOGIN_ERROR": "Login credentials incorrect",
+    "LOGIN_SUCCESS": "Login successful",
+    "SIGNUP_SUCCESS": "Signup succesful",
+    "EMPTY_FIELDS": "Please fill in the required empty fields",
+    "TIMEOUT": "Time expired"
 }

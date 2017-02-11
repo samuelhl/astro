@@ -1,12 +1,17 @@
 {
     "SIGNUP": "Registrarse",
     "LOGIN": "Iniciar sesión",
-    "NAME": "Nombre",
+    "USERNAME": "Nombre de usuario",
     "EMAIL": "Correo",
     "PASSWORD": "Contraseña",
+    "TELEPHONE": "Teléfono",
     "USER_TYPE": "Tipo de usuario",
     "OBSERVER": "Observador",
     "OBSERVATORY": "Observatorio",
+    "NAME": "Nombre",
+    "SURNAME": "Apellidos",
+    "ADDRESS": "Dirección",
+    "DESCRIPTION": "Descripción",
     "EVENTS": "Eventos",
     "MY_EVENTS": "Mis eventos",
     "CREATION": "Creación",
@@ -22,5 +27,9 @@
     "IMAGE": "Imagen",
     "CREATED": "Observación creada",
     "CREATION_ERROR":"Error: El número de plazas por persona no puede ser mayor que el total",
-    "TIMEOUT": "Tiempo límite excedido"
+    "LOGIN_ERROR": "Credenciales de inicio de sesión incorrectos",
+    "LOGIN_SUCCESS": "Inicio de sesión correcto",
+    "SIGNUP_SUCCESS": "Registro correcto",
+    "EMPTY_FIELDS": "Por favor, rellena los campos obligatorios vacíos",
+    "TIMEOUT": "Tiempo expirado"
 }
