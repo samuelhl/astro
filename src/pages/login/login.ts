@@ -9,6 +9,7 @@ import { Events } from '../../pages/events/events';
 })
 
 export class LoginPage {
+  // User examples
   user1: {email: string, password: string} = {
     email: 'test1@example.com',
     password: 'test'
@@ -27,17 +28,34 @@ export class LoginPage {
     password: ''
   };
 
+  // Translated strings
   private loginErrorString: string;
   private loginSuccessString: string;
+  private emptyFieldsString: string;
+  private timeoutString: string;
 
   constructor(public navCtrl: NavController, public toastCtrl: ToastController, public translateService: TranslateService) {
+    // String translations
     this.translateService.get('LOGIN_ERROR').subscribe((value) => {
       this.loginErrorString = value;
     });
 
     this.translateService.get('LOGIN_SUCCESS').subscribe((value) => {
       this.loginSuccessString = value;
-    })
+    });
+
+    this.translateService.get('EMPTY_FIELDS').subscribe((value) => {
+      this.emptyFieldsString = value;
+    });
+
+    this.translateService.get('TIMEOUT').subscribe((value) => {
+      this.timeoutString = value;
+    });
+
+    // Timeout (1 minute)
+    let timeoutId = setTimeout(() => {  
+      this.timeout();
+    }, 60000);
   }
 
   doLogin() {
@@ -58,6 +76,13 @@ export class LoginPage {
         });
         toast.present();
       }
+    } else {
+      let toast = this.toastCtrl.create({
+          message: this.emptyFieldsString,
+          duration: 2000,
+          position: 'top'
+        });
+      toast.present();
     }
   }
 
@@ -67,5 +92,15 @@ export class LoginPage {
     } else {
       return false;
     }
+  }
+
+  timeout() {
+    let toast = this.toastCtrl.create({
+          message: this.timeoutString,
+          duration: 2000,
+          position: 'top'
+        });
+    toast.present();
+    this.navCtrl.pop();
   }
 }

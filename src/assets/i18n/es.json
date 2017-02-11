@@ -16,5 +16,7 @@
     "MY_EVENTS": "Mis eventos",
     "LOGIN_ERROR": "Credenciales de inicio de sesión incorrectos",
     "LOGIN_SUCCESS": "Inicio de sesión correcto",
-    "SIGNUP_SUCCESS": "Registro correcto"
+    "SIGNUP_SUCCESS": "Registro correcto",
+    "EMPTY_FIELDS": "Porfavor rellena los campos obligatorios vacíos",
+    "TIMEOUT": "Tiempo expirado"
 }

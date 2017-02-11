@@ -10,7 +10,7 @@
     <ion-list>
 
       <ion-item>
-        <ion-label>{{ 'EMAIL' | translate }}</ion-label>
+        <ion-label>{{ 'EMAIL' | translate }}*</ion-label>
         <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
       </ion-item>
 
@@ -20,7 +20,7 @@
       </ion-item>
 
       <ion-item>
-        <ion-label>{{ 'PASSWORD' | translate }}</ion-label>
+        <ion-label>{{ 'PASSWORD' | translate }}*</ion-label>
         <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
       </ion-item>
 
@@ -30,7 +30,7 @@
       </ion-item>
 
       <ion-item>
-        <ion-label>{{ 'USER_TYPE' | translate}}</ion-label>
+        <ion-label>{{ 'USER_TYPE' | translate}}*</ion-label>
         <ion-select [(ngModel)]="account.userType" name="userType">
           <ion-option value="observer">{{ 'OBSERVER' | translate}}</ion-option>
           <ion-option value="observatory">{{ 'OBSERVATORY' | translate}}</ion-option>

@@ -16,5 +16,7 @@
     "MY_EVENTS": "My events",
     "LOGIN_ERROR": "Login credentials incorrect",
     "LOGIN_SUCCESS": "Login successful",
-    "SIGNUP_SUCCESS": "Signup succesful"
+    "SIGNUP_SUCCESS": "Signup succesful",
+    "EMPTY_FIELDS": "Please fill in the required empty fields",
+    "TIMEOUT": "Time expired"
 }

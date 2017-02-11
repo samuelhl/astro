@@ -21,22 +21,58 @@ export class SignupPage {
     description: ''
   };
 
+  // Translated strings
   private signupSuccessString: string;
+  private emptyFieldsString: string;
+  private timeoutString: string;
 
   constructor(public navCtrl: NavController, public toastCtrl: ToastController, public translateService: TranslateService) {
+    // String translations
     this.translateService.get('SIGNUP_SUCCESS').subscribe((value) => {
       this.signupSuccessString = value;
-    })
+    });
+
+    this.translateService.get('EMPTY_FIELDS').subscribe((value) => {
+      this.emptyFieldsString = value;
+    });
+
+    this.translateService.get('TIMEOUT').subscribe((value) => {
+      this.timeoutString = value;
+    });
+
+    // Timeout (1 minute)
+    let timeoutId = setTimeout(() => {  
+      this.timeout();
+    }, 60000);
   }
 
   doSignup() {
+    if(this.account.email && this.account.password && this.account.userType) {
+      let toast = this.toastCtrl.create({
+          message: this.signupSuccessString,
+          duration: 2000,
+          position: 'top'
+      });
+      toast.present();
+      this.navCtrl.setRoot(Events);
+    } else {
+      let toast = this.toastCtrl.create({
+          message: this.emptyFieldsString,
+          duration: 2000,
+          position: 'top'
+        });
+      toast.present();
+    }
+  }
+
+  timeout() {
     let toast = this.toastCtrl.create({
-        message: this.signupSuccessString,
-        duration: 2000,
-        position: 'top'
-    });
+          message: this.timeoutString,
+          duration: 2000,
+          position: 'top'
+        });
     toast.present();
-    this.navCtrl.setRoot(Events);
+    this.navCtrl.pop();
   }
 }
 
