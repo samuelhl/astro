@@ -18,5 +18,9 @@
     "DEADLINE": "Deadline",
     "DATE": "Date",
     "TIME": "Time",
-    "CREATE": "Create"
+    "CREATE": "Create",
+    "IMAGE": "Image",
+    "CREATED": "Created",
+    "CREATION_ERROR":"Error: Amount of places per person cannot be higher than the total amount of places",
+    "TIMEOUT": "Your time expired"
 }

@@ -8,47 +8,52 @@
 </ion-header>
 
 <ion-content padding>
-  <form (submit)="createObservation()">
+  <form name="creationform" (submit)="createObservation()">
     <ion-list>
 
       <ion-item>
         <ion-label>{{ 'NAME' | translate }}</ion-label>
-        <ion-input type="email" [(ngModel)]="name" name="name"></ion-input>
+        <ion-input type="text" [(ngModel)]="name" name="name" required></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label>{{ 'DESCRIPTION' | translate }}</ion-label>
-        <ion-input type="text" [(ngModel)]="password" name="password"></ion-input>
+        <ion-input type="text" [(ngModel)]="description" name="description" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'IMAGE' | translate }}</ion-label>
+        <ion-input type="file" [(ngModel)]="image" name="image"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label>{{ 'COORDINATES' | translate }}</ion-label>
-        <ion-input type="text" [(ngModel)]="coordinates" name="coordinates"></ion-input>
+        <ion-input type="text" [(ngModel)]="coordinates" name="coordinates" required></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label>{{ 'PLACES' | translate }}</ion-label>
-        <ion-input type="number" [(ngModel)]="places" name="places"></ion-input>
+        <ion-input type="number" [(ngModel)]="places.total" name="places" required></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label>{{ 'PLACES_PER_PERSON' | translate }}</ion-label>
-        <ion-input type="number" [(ngModel)]="places_per_person" name="places_per_person"></ion-input>
+        <ion-input type="number" [(ngModel)]="places.person" name="places_per_person" required></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label>{{ 'DATE' | translate }}</ion-label>
-        <ion-input type="date" [(ngModel)]="date" name="date"></ion-input>
+        <ion-input type="date" [(ngModel)]="date" name="date" required></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label>{{ 'TIME' | translate }}</ion-label>
-        <ion-input type="time" [(ngModel)]="time" name="time"></ion-input>
+        <ion-input type="time" [(ngModel)]="time" name="time" required></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label>{{ 'DEADLINE' | translate }}</ion-label>
-        <ion-input type="date" [(ngModel)]="deadline" name="deadline"></ion-input>
+        <ion-input type="date" [(ngModel)]="deadline" name="deadline" required></ion-input>
       </ion-item>
 
       <div padding>

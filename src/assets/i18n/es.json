@@ -18,5 +18,9 @@
     "DEADLINE": "Fecha límite",
     "DATE": "Fecha",
     "TIME": "Hora",
-    "CREATE": "Crear"
+    "CREATE": "Crear",
+    "IMAGE": "Imagen",
+    "CREATED": "Creado",
+    "CREATION_ERROR":"Error: El número de plazas por persona no puede ser mayor que el total",
+    "TIMEOUT": "Tiempo límite excedido"
 }
