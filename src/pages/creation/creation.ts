@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ToastController } from 'ionic-angular';
 import { NavController } from 'ionic-angular';
 import { TranslateService } from 'ng2-translate/ng2-translate';
+import { Events } from '../../pages/events/events';
 
 @Component({
   selector: 'page-creation',
@@ -54,6 +55,7 @@ export class CreationPage {
         position: 'top'
       });
       toast.present();
+      this.navCtrl.setRoot(Events);
       }
   }
 

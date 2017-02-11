@@ -20,7 +20,7 @@
     "TIME": "Hora",
     "CREATE": "Crear",
     "IMAGE": "Imagen",
-    "CREATED": "Creado",
+    "CREATED": "Observación creada",
     "CREATION_ERROR":"Error: El número de plazas por persona no puede ser mayor que el total",
     "TIMEOUT": "Tiempo límite excedido"
 }

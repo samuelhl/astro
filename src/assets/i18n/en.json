@@ -20,7 +20,7 @@
     "TIME": "Time",
     "CREATE": "Create",
     "IMAGE": "Image",
-    "CREATED": "Created",
+    "CREATED": "Observation created",
     "CREATION_ERROR":"Error: Amount of places per person cannot be higher than the total amount of places",
     "TIMEOUT": "Your time expired"
 }
