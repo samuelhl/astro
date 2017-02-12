@@ -29,7 +29,6 @@ export class MyApp {
       { title: 'EVENTS', component: Events },
       { title: 'MY_EVENTS', component: MyEvents },
       { title: 'CREATE_OBSERVATION', component: CreationPage },
-      { title: 'OBSERVATION', component: Observacion }
     ];
 
     this.translateConfig();
