@@ -7,6 +7,8 @@ import { WelcomePage } from '../pages/welcome/welcome'
 import { Events } from '../pages/events/events';
 import { MyEvents } from '../pages/my_events/my_events';
 import { CreationPage } from '../pages/creation/creation';
+import { Observacion } from '../pages/observacion/observacion';
+
 
 
 @Component({
@@ -26,7 +28,8 @@ export class MyApp {
     this.pages = [
       { title: 'EVENTS', component: Events },
       { title: 'MY_EVENTS', component: MyEvents },
-      { title: 'CREATE_OBSERVATION', component: CreationPage }
+      { title: 'CREATE_OBSERVATION', component: CreationPage },
+      { title: 'OBSERVATION', component: Observacion }
     ];
 
     this.translateConfig();

@@ -1,0 +1,64 @@
+
+    <ion-header>
+      <ion-navbar>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>{{ 'OBSERVATION' | translate }}</ion-title>
+      </ion-navbar>
+    </ion-header>
+
+    <ion-content padding>
+        <!--
+            Coordenadas geográficas
+            Dirección
+            Descripción
+            Fecha
+            Hora
+            Número de plazas máximas
+            Número máximo de reservas por observador
+        -->
+
+        <h2 class="obs-title">{{data.title}}</h2>
+        <ion-img src="{{data.img}}"></ion-img>
+                <h3>{{ 'INFORMATION' | translate }}</h3>
+                <table>
+                    <tr>
+                        <td><span class="obs-label">{{ 'ADRESS' | translate }}: </span>{{data.address}}</td>
+                    </tr>
+                    <tr>
+                        <td><span class="obs-label">{{ 'DATE' | translate }}: </span>{{data.date}} - {{data.hour}}</td>
+                    </tr>
+                    <tr>
+                        <td><span class="obs-label">{{ 'NUMMAXPLACES' | translate }}: </span>{{data.nPlaces}}</td>
+                    </tr>
+                </table>
+
+                <h3>{{ 'DESCRIPTION' | translate }}</h3>
+                <p class="text-justify">{{data.description}}</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.0240495757507!2d-4.368979384362408!3d36.84190007305026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd725f7f22a5042f%3A0xcc6c771ac30ccfaf!2sParque+Natural+Montes+de+M%C3%A1laga!5e0!3m2!1ses!2ses!4v1486815463791" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                <form (submit)="doReserve()">
+                <ion-list>
+
+                            <ion-item >
+                                <ion-label>{{ 'PLACESPERPERSON' | translate }}</ion-label>
+                                <ion-select name="placesperperson" [(ngModel)]="placesperperson">
+                                    <ion-option value="1" selected="true">1</ion-option>
+                                    <ion-option value="2">2</ion-option>
+                                    <ion-option value="3">3</ion-option>
+                                    <ion-option value="4">4</ion-option>
+                                    <ion-option value="5">5</ion-option>
+                                </ion-select>
+                            </ion-item>
+
+
+                            <button width-50 ion-button color="primary" block>{{ 'RESERVE' | translate }}</button>
+
+
+
+
+                </ion-list>
+                </form>
+                        
+    </ion-content>
