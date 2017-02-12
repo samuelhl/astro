@@ -43,9 +43,9 @@ export class SignupPage {
     });
 
     // Timeout (1 minute)
-    this.timeoutId = setTimeout(() => {  
+    this.timeoutId = setTimeout(() => {
       this.timeout();
-    }, 10000);
+    }, 60000);
   }
 
   doSignup() {
@@ -79,4 +79,3 @@ export class SignupPage {
     clearTimeout(this.timeoutId);
   }
 }
-

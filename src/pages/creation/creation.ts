@@ -66,8 +66,7 @@ export class CreationPage {
           position: 'top'
         });
     toast.present();
-    this.navCtrl.pop();
+    this.navCtrl.setRoot(Events);
     clearTimeout(this.timeoutId);
   }
-
 }
