@@ -32,5 +32,6 @@
     "LOGIN_SUCCESS": "Inicio de sesión correcto",
     "SIGNUP_SUCCESS": "Registro correcto",
     "EMPTY_FIELDS": "Por favor, rellena los campos obligatorios vacíos",
-    "TIMEOUT": "Tiempo expirado"
+    "TIMEOUT": "Tiempo expirado",
+    "VIEW": "Ver"
 }

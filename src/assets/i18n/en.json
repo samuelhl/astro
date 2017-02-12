@@ -12,6 +12,8 @@
     "SURNAME": "Surname",
     "ADDRESS": "Address",
     "DESCRIPTION": "Description",
+    "OBSERVATIONS": "Observations",
+    "MY_OBSERVATIONS": "My observations",
     "EVENTS": "Events",
     "MY_EVENTS": "My events",
     "CREATION": "Creation",
@@ -30,5 +32,6 @@
     "LOGIN_SUCCESS": "Login successful",
     "SIGNUP_SUCCESS": "Signup succesful",
     "EMPTY_FIELDS": "Please fill in the required empty fields",
-    "TIMEOUT": "Time expired"
+    "TIMEOUT": "Time expired",
+    "VIEW": "View"
 }
