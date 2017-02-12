@@ -23,6 +23,7 @@
     "ACCEPT": "Accept",
     "EVENTS": "Events",
     "MY_EVENTS": "My events",
+    "CANCEL": "Cancel",
     "CREATION": "Creation",
     "CREATE_OBSERVATION": "Create observation",
     "COORDINATES": "Coordinates",

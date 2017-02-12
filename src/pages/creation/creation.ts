@@ -59,6 +59,10 @@ export class CreationPage {
       }
   }
 
+  cancel(){
+    this.navCtrl.setRoot(Events);
+  }
+
   timeout() {
     let toast = this.toastCtrl.create({
           message: this.timeoutString,
