@@ -34,10 +34,10 @@ export class Observacion {
     alert.present();
   }
   
-  // TODO: Remove when login works
+
   doReserve() {
-    //this.navCtrl.setRoot(Observation);
     this.presentAlert();
+    this.navCtrl.pop();
   }
 
 }

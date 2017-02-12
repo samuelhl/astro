@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-//import { Observacion } from '../../pages/observacion/observacion';
+import { Observacion } from '../../pages/observacion/observacion';
 
 @Component({
   selector: 'page-events',
@@ -76,7 +76,7 @@ export class Events {
 	}
 
 	goObservation() {
-		//this.navCtrl.setRoot(Observacion);
+		this.navCtrl.push(Observacion);
 	}
 
 }
