@@ -103,8 +103,30 @@ export class Events {
 
 	}
 
-	goObservation() {
-		this.navCtrl.push(Observacion);
+	goObservation(id: number) {
+		switch (id) {
+  			case 1:
+    			this.navCtrl.push(Observacion, this.Observation1);
+    			break;
+  			case 2:
+    			this.navCtrl.push(Observacion, this.Observation2);
+    			break;
+			case 3:
+    			this.navCtrl.push(Observacion, this.Observation3);
+    			break;
+			case 4:
+    			this.navCtrl.push(Observacion, this.Observation4);
+    			break;
+			case 5:
+    			this.navCtrl.push(Observacion, this.Observation5);
+    			break;
+			case 6:
+    			this.navCtrl.push(Observacion, this.Observation6);
+    			break;
+			case 7:
+    			this.navCtrl.push(Observacion, this.Observation7);
+    			break;
+		}
 	}
 
 }

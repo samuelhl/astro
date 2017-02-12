@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 
 @Component({
@@ -8,7 +8,20 @@ import { AlertController } from 'ionic-angular';
   templateUrl: 'observacion.html'
 })
 export class Observacion {
-
+  data: {
+    title: string, 
+    location: string, 
+    address: string, 
+    description: string, 
+    date: string,
+    hour: string, 
+    nPlaces: number, 
+    limitDate: string, 
+    nPlacesPerPerson: number, 
+    img: string
+  };
+  
+/*
   data: {title: string, location: string, address: string, description: string, date: string, hour: string, nPlaces: number, limitDate: string, nPlacesPerPerson: number, img: string} = {
     title: 'El cometa Halley hará aparición el próximo fin de semana',
     location: "36°49′00″N 4°23′00″O",
@@ -21,8 +34,20 @@ export class Observacion {
     limitDate: '15/02/2017',
     nPlacesPerPerson: 5,
   };
-  constructor(public navCtrl: NavController, private alertCtrl: AlertController) {
-    
+  */
+  constructor(public navCtrl: NavController, private alertCtrl: AlertController, public params: NavParams) {
+    this.data = {
+      title: params.get('title'),
+      location: params.get('location'),
+      description: params.get('description'),
+      address: params.get('address'),
+      date: params.get('date'),
+      hour: params.get('hour'),
+      img: params.get('img'),
+      nPlaces: params.get('nPlaces'),
+      limitDate: params.get('limitDate'),
+      nPlacesPerPerson: params.get('nPlacesPerPerson'),
+    };
   }
   
   presentAlert() {
